@@ -31,6 +31,7 @@
 #define	UNION_FILE	"union--"
 #define	ENUM_FILE	"enum--"
 #define	VAR_FILE	"var--"
+#define	NAMESPACE_FILE	"namespace--"
 
 /* Path used for built-in types */
 #define	BUILTIN_PATH		"<built-in>"
