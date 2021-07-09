@@ -110,7 +110,7 @@ struct dwarf_type {
 	{ DW_TAG_enumeration_type, ENUM_FILE },
 	{ DW_TAG_structure_type, STRUCT_FILE },
 	{ DW_TAG_union_type, UNION_FILE },
-	{ DW_TAG_namespace_type, NAMESPACE_FILE },
+	{ DW_TAG_namespace, NAMESPACE_FILE },
 	{ 0, NULL }
 };
 
