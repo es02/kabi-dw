@@ -80,6 +80,7 @@ typedef struct obj_list_head {
  *		type...)
  * is_bitfield:	(var) It's a bitfield
  * first_bit, last_bit:	(var) bit range within the offset.
+ * namespace: namespace of the symbol
  * name:	name of the symbol
  * ref_record:	(reffile) pointer to the referenced record (only while
  *              generating records, otherwise base_type with string is used)
@@ -104,8 +105,10 @@ typedef struct obj_list_head {
  * the unary ptr. Only functions uses both.
  */
 typedef struct obj {
+	// namespace obj needs to be added here
 	obj_types type;
 	unsigned char is_bitfield, first_bit, last_bit;
+	char namespace;
 	union {
 		const char *name;
 		struct record *ref_record;
